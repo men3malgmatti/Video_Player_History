@@ -1,0 +1,9 @@
+{% extends "base.html"%} {% if title %}
+<h1>{{title}}</h1>
+{% endif %}{% block content %}
+<ul class="list-group">
+  {% for object in object_list %}
+  <li class="list-group-item">{{ object.url}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
